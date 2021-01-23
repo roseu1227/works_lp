@@ -152,6 +152,7 @@ p {
           background: url("../images/icon_entry.svg") center 50% / 100% auto
             no-repeat;
           width: 42px;
+          margin-left: -14px;
         }
       }
     }
@@ -864,7 +865,7 @@ p {
           font-size: 1.7rem;
           &::before {
             content: "";
-            margin-right: 14px;
+            margin-right: 8px;
             display: inline-block;
             height: 34px;
             vertical-align: middle;
@@ -901,6 +902,7 @@ p {
             background: url("../images/icon_entry.svg") center 50% / 100% auto
               no-repeat;
             width: 42px;
+            margin-left: -18px;
           }
         }
       }
