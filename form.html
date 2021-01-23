@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォーム</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+     <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">健康経営「相談室」</h1>
+    </header>
+
+    <main>
+        <section class="formPage">
+        <h2 class="form_ttl">ご登録申請フォーム</h2>
+        <form action="form-confirm.html" method="post" class="form">
+            <div class="form_item">
+              <label for="name" class="required" required>氏名</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="form_item">
+                <label for="kana" class="required" required>フリガナ</label>
+                <input type="text" name="kana" id="kana">
+              </div>
+              <div class="form_item">
+                <label for="company" class="required" required>会社名</label>
+                <input type="text" name="company" id="company">
+              </div>
+              <div class="form_item occupation_item">
+                <label for="occupation" class="required" required>職種</label>
+                <div class="radio_list">
+                <div class="radio_item"><input id="hr" type="radio" name="hr" value="hr"><label for="hr" class="occupation_name">人事</label></div>
+                <div class="radio_item"><input id="laborer" type="radio" name="laborer" value="laborer"><label for="laborer" class="occupation_name">社労士</label></div>
+                <div class="radio_item other"><input id="other" type="radio" name="other" value="other"><label for="other" class="occupation_name">その他</label></div>
+                <input type="text" name="other" id="other">
+                </div>
+            </div>
+              </div>
+              <div class="form_item">
+                <label for="mail" class="required" required>メールアドレス</label>
+                <input type="email" name="mail" id="mail">
+              </div>
+              <div class="form_item">
+                <label for="tel" class="required" required>電話番号</label>
+                <input type="tel" name="tel" id="tel">
+              </div>
+              <div class="form_item">
+                <label for="comment" class="required" required>ご希望内容等</label>
+                <textarea name="comment"></textarea>
+              </div>
+              <div class="btn_wrap">
+                <input type="submit" class="btn_form" value="確認する">
+              </div>
+        </form>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="f_inner">
+            <div class="logo">健康経営「相談室」</div>
+            <a href="#" class="privacy_policy">Privacy Policy</a>
+            <small>©️ Dr.KENKO KEIEI Inc.</small></div>
+        </div>
+    </footer>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォーム</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+     <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">健康経営「相談室」</h1>
+    </header>
+
+    <main>
+        <section class="confilmPage">
+        <h2 class="form_ttl">ご登録申請フォーム</h2>
+        <form action="form-thanks.html" method="post" class="form form_confilm">
+          <div class="form_item">
+            <label for="name">氏名</label>
+            <p>氏名</p>
+          </div>
+          <div class="form_item">
+              <label for="kana">フリガナ</label>
+              <p>フリガナ</p>
+            </div>
+            <div class="form_item">
+              <label for="company">会社名</label>
+              <p>会社名</p>
+            </div>
+            <div class="form_item occupation_item">
+              <label for="occupation">職種</label>
+              <div class="radio_list">
+              <div class="radio_item other"><input id="other" type="radio" name="other" value="other"><label for="other" class="occupation_name">その他</label></div>
+              <p>その他</p>
+              </div>
+          </div>
+            <div class="form_item">
+              <label for="mail">メールアドレス</label>
+              <p>メールアドレス</p>
+            </div>
+            <div class="form_item">
+              <label for="tel">電話番号</label>
+              <p>電話番号</p>
+            </div>
+            <div class="form_item">
+              <label for="comment">ご希望内容等</label>
+              <p>ご希望内容等</p>
+            </div>
+            <div class="btn_wrap">
+            <input type="submit" class="btn_form btn_confilm" value="登録する">
+            <input type="submit" class="btn_form btn_confilm back" value="編集画面へ戻る">
+            </div>
+
+      </form>
+    </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="f_inner">
+            <div class="logo">健康経営「相談室」</div>
+            <a href="#" class="privacy_policy">Privacy Policy</a>
+            <small>©️ Dr.KENKO KEIEI Inc.</small></div>
+        </div>
+    </footer>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
